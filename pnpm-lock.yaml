@@ -4,13 +4,19 @@ importers:
 
   .:
     specifiers:
+      '@tsconfig/node16-strictest': ^1.0.1
+      '@types/node': 17.0.36
       husky: ^8.0.1
       lint-staged: ^12.4.2
       prettier: ^2.6.2
+      typescript: 4.7.2
     dependencies:
+      '@tsconfig/node16-strictest': 1.0.1
+      '@types/node': 17.0.36
       husky: 8.0.1
       lint-staged: 12.4.2
       prettier: 2.6.2
+      typescript: 4.7.2
 
   app:
     specifiers:
@@ -214,13 +220,16 @@ packages:
     resolution: {integrity: sha512-WiBSI6JBIhC6LRIsB2Kwh8DsGTlbBU+mLRxJmAe3LjHTdkDpwIbEOZgoXBbZilk/vlfjK8i6nKRAvIRn1XaIMw==}
     dev: true
 
+  /@tsconfig/node16-strictest/1.0.1:
+    resolution: {integrity: sha512-VN0sa4DUljguhKIEbdIP2NqcYoC6OuLM9rrPb53PwnFJiBRwakpLH0k0Qp3gqcQxb6H4wtL4A6VGhFwL5DTf2A==}
+    dev: false
+
   /@types/json5/0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
   /@types/node/17.0.36:
     resolution: {integrity: sha512-V3orv+ggDsWVHP99K3JlwtH20R7J4IhI1Kksgc+64q5VxgfRkQG8Ws3MFm/FZOKDYGy9feGFlZ70/HpCNe9QaA==}
-    dev: true
 
   /@types/prop-types/15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
@@ -2092,7 +2101,6 @@ packages:
     resolution: {integrity: sha512-Mamb1iX2FDUpcTRzltPxgWMKy3fhg0TN378ylbktPGPK/99KbDtMQ4W1hwgsbPAsG3a0xKa1vmw4VKZQbkvz5A==}
     engines: {node: '>=4.2.0'}
     hasBin: true
-    dev: true
 
   /unbox-primitive/1.0.2:
     resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==}
