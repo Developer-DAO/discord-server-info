@@ -1,0 +1,17 @@
+{
+  "name": "discord-server-info",
+  "private": true,
+  "license": "MIT",
+  "description": "Explore Discord server data and statistics",
+  "keywords": [
+    "discord",
+    "discord.js",
+    "next.js",
+    "prisma"
+  ],
+  "repository": "https://github.com/developer-dao/discord-server-info",
+  "readme": "https://github.com/Developer-DAO/discord-server-info#readme",
+  "bugs": "https://github.com/Developer-DAO/discord-server-info/issues",
+  "scripts": {},
+  "dependencies": {}
+}
