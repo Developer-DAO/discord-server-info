@@ -1,0 +1,10 @@
+{
+  "name": "bot",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "tsc -p tsconfig.json && node dist/index.js"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
