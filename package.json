@@ -1,0 +1,26 @@
+{
+  "name": "discord-server-info",
+  "private": true,
+  "license": "MIT",
+  "description": "Explore Discord server data and statistics",
+  "keywords": [
+    "discord",
+    "discord.js",
+    "next.js",
+    "prisma"
+  ],
+  "repository": "https://github.com/developer-dao/discord-server-info",
+  "readme": "https://github.com/Developer-DAO/discord-server-info#readme",
+  "bugs": "https://github.com/Developer-DAO/discord-server-info/issues",
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "husky": "^8.0.1",
+    "lint-staged": "^12.4.2",
+    "prettier": "^2.6.2"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,md,json,yml}": "prettier --write"
+  }
+}
