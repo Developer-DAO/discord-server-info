@@ -22,28 +22,9 @@ You'll have to go through them one-by-one. Good luck!
 Or: you can use `discord-server-info` (once it's built) to generate that list
 for you!
 
-## Technical Overview
+## Contributing
 
-To make this work, `discord-server-info` will need a few separate pieces:
-
-- `bot`
-- `db`
-- `app`
-
-![A diagram showing the bot, db, and app pieces and how the relate](./assets/pieces.png)
-
-`bot` is a Discord bot that reads data from the servers it's connected to and
-stores it in the `db`.
-
-`db` is a Prisma database that provides an API for storing app settings and
-anonymized server data.
-
-`app` is a Next.js application that allows users to authenticate with Discord
-and explore data from their servers.
-
-> If you're wondering why we need this structure rather than having the app read
-> data directly from the Discord API, it's because the Discord API intentionally
-> provides access to very little data. A bot account is required for full
-> access.
-
-This project will eventually be a monorepo with a package for each piece.
+If you'd like to contribute to this project, please begin by reading through
+[`CONTRIBUTING.md`](./CONTRIBUTING.md) for a technical overview of this
+repository and information regarding [`pnpm`](https://pnpm.io/), the package
+manager used in this repository.
