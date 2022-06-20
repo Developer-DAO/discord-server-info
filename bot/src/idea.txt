@@ -1,0 +1,24 @@
+SlashCommand:
+/start -- 自动检查权限，并告知用户权限有问题的频道 并开始初次收集信息
+/check -- 权限检查，并告知用户权限有问题的频道
+/status -- Bot状态检查
+/whitelist -- 跳过一些频道
+/whitelist -- 跳过一些人
+
+数据库设计
+Channel Collection
+id -- 自动生成 unique
+guild_id -- 区分不同的discord服务器
+channel_id -- 该discord服务器下的频道id
+channel_member_count -- 该channel的成员数目
+last_message_timestamp -- 最后一条消息对应的时间
+last_message_userId -- 最后一条消息对应的成员
+has_topic -- 该channel是否有topic
+
+Member Collection
+id -- 自动生成 unique
+guild_id -- 区分不同的discord服务器
+user_id -- 成员id
+user_display_name -- 成员展示的名字
+last_message_timestamp -- 最后一条消息对应的时间
+last_message_channel_id -- 最后一条消息发送的所在频道

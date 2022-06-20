@@ -1,0 +1,28 @@
+
+generator client {
+  	provider = "prisma-client-js"
+}
+
+datasource db {
+	provider = "mongodb"
+	url      = env("DATABASE_URL")
+}
+
+model Guild{
+	id	String @id @default(auto()) @map("_id") @db.ObjectId
+	guild_id String
+	channel_id String
+	channel_member_count Int
+	last_message_timestamp DateTime
+	last_message_userId String
+	has_topic Boolean
+}
+
+model Member{
+	id	String @id @default(auto()) @map("_id") @db.ObjectId
+	guild_id String
+	user_id String
+	user_display_name String
+	last_message_timestamp DateTime
+	last_message_channel_id String
+}
